@@ -1,15 +1,30 @@
+# Problem Solving
 
- **file Tic Tac Toe game** 
-contains a PHP implementation of the Tic Tac Toe game. It includes a function called `checkWinner` which checks if a player has won the game based on the current state of the board.
+This repository contains several PHP files, each containing a function that performs a specific task. Below is a brief overview of each file along with usage examples:
 
-The `checkWinner` function iterates through the rows, columns, and diagonals of the game board to determine if there is a winning combination. If a winning combination is found, the function returns a string indicating the winning player ("X" or "O"). If there is no winner yet, the function returns `null`.
+## Tic Tac Toe game.php
 
-Below is a sample usage of the `checkWinner` function where a predefined game board is passed to it to check for the winner:
+This file contains a function to check if a player has won in a Tic Tac Toe game. It iterates through the rows, columns, and diagonals of the game board to determine the winner.
 
+**Usage Example:**
 ```php
+// Test the function
 $board = [
     ['X', 'O', 'O'],
     ['O', 'O', 'O'],
     ['X', 'O', 'X']
 ];
 echo checkWinner($board);
+
+## countLettersAndNumbers.php
+
+This file includes a function to count the number of letters and numbers in a given string. It iterates through each character in the string and increments the count for letters and numbers accordingly.
+
+**Usage Example:**
+```php
+// Test the function with a sample string
+$test = countLettersAndNumbers('ziadadelgomaa 123456789  5577 z');
+
+// Output the result
+echo '<pre>';
+print_r($test);
