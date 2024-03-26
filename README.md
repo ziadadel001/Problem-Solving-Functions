@@ -11,7 +11,7 @@ This file contains a function to check if a player has won in a Tic Tac Toe game
 // Test the function
 $board = [
     ['X', 'O', 'O'],
-    ['O', 'O', 'O'],
+    ['O', 'O', 'X'],
     ['X', 'O', 'X']
 ];
 echo checkWinner($board);
